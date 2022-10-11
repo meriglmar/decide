@@ -12,27 +12,27 @@ MODULES = [
     'visualizer',
     'voting',
 ]
-
+BASEURL = 'http://localhost:8000'
 APIS = {
-    'authentication': 'http://localhost:8080',
-    'base': 'http://localhost:8080',
-    'booth': 'http://localhost:8080',
-    'census': 'http://localhost:8080',
-    'mixnet': 'http://localhost:8080',
-    'postproc': 'http://localhost:8080',
-    'store': 'http://localhost:8080',
-    'visualizer': 'http://localhost:8080',
-    'voting': 'http://localhost:8080',
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
 }
 
-BASEURL = 'http://localhost:8080'
+
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'decidedb',
+        'NAME': 'decide',
         'USER': 'decide',
-        'PASSWORD': 's1st3mas',
+        'PASSWORD':'decide',
         'HOST': 'localhost',
         'PORT': '5432',
     }
